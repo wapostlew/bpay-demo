@@ -33,7 +33,7 @@ return [
 
     'kitsu' => [
         'url' => [
-            'api' => env('KITSU_URL_API'),
+            'api' => env('KITSU_URL_API', "https://kitsu.io/api/edge"),
         ],
         'fields' => [
             'anime' => join(',', [
