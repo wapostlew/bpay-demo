@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 class Manga extends Command
 {
-    protected $signature = 'kitsu:manga {--size=1} {--parse}';
+    protected $signature = 'kitsu:manga {--size=0} {--parse}';
     protected $description = 'Kitsu API manga
     {--size=1 : How many pages would you like to load?}
     {--parse : Whether the job should be parse}';

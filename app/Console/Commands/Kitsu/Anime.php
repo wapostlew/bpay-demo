@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 class Anime extends Command
 {
-    protected $signature = 'kitsu:anime {--size=1} {--parse}';
+    protected $signature = 'kitsu:anime {--size=0} {--parse}';
     protected $description = 'Kitsu API anime
     {--size=1 : How many pages would you like to load?}
     {--parse : Whether the job should be parse}';

@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('kitsus', function (Blueprint $table) {
+            $table->uuid('id')->primary();
             $table->integer('kitsu_id');
             $table->string('kitsu_content', 5);
 
