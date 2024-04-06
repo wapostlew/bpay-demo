@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Services\Kitsu\KitsuAPIService;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Http;
 
@@ -36,5 +37,6 @@ class AppServiceProvider extends ServiceProvider
                 )->asJson(),
             )
         );
+        Paginator::useBootstrapFive();
     }
 }

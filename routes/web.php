@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Kitsu\KitsuController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::controller(KitsuController::class)->group(function () {
+    Route::get('/', 'show')->name('show');
+})->name('kitsu');

@@ -31,8 +31,4 @@ class KitsuAPIService
             content_type: 'anime'
         );
     }
-
-    public static function parse()
-    {
-    }
 }
